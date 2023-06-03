@@ -1,3 +1,13 @@
+# NOTICE
+
+This is a fork made for the sole purpose of making a Godot 4 compatible version of this plugin. The only changes made to the original code are the conversion to the new gdscript spec, so that the plugin will run in Godot 4 without error.
+That includes replacing Export annotations with the new formats, renaming relevant functions and properties, and replacing deprecated ImmediateGeometry nodes with ImmediateMesh resource assigned to MeshInstance node.
+It does not modify the plugin's behavior in any way, nor does it attempt to fix anything that might have broken between Godot versions 3.4 and 3.5. (the original plugin is designed for 3.4, and it seems some some of the camera modifiers are not working as intended in 3.5, that has not changed in this version)
+
+Shortly after I started this project, I found a different camera plugin that better suits my needs, so I won't be touching this anymore, but I figured I'd at least contribute what I've already done, so that maybe somebody else can build on top of it. 
+
+## Original README
+
 # GodotVCamera
 
 "Virtual Camera" addon inspired by Cinemachine for Unity
